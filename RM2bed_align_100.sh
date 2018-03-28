@@ -4,7 +4,7 @@
 ABBREV=$(basename $1 .align)
 	
 #gunzip $ABBREV".align"
-
+#
 perl /lustre/work/daray/software/RepeatMasker/util/calcDivergenceFromAlign.Ray.pl -noCpG $ABBREV".align" >$ABBREV"_div.out" 
 
 #perl /lustre/work/daray/software/RepeatMasker/util/calcDivergenceFromAlign.Ray.pl $ABBREV".align" >$ABBREV"_wCpG_div.out"
